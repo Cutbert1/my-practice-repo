@@ -49,6 +49,7 @@ h1 {
 }
 #menu > li {
     margin-bottom: 1rem;
+    font-size: 0.7rem;
 }
 
 .active {
@@ -91,3 +92,53 @@ main {
 footer {
     background-color: blueviolet;
 }
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header media query */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        text-decoration: underline;
+        
+          
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 1.9rem;
+        line-height: 75px;
+        margin: 0 0 5rem;
+    }
+    /* Main Content */
+    #main {
+        /* Push down to accomodate a larger header */
+        margin-top: 79px;
+    }
+}
+
+/* Media query: Large devices (laptop and desktops, 992px and up) */
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+
+    
+
+
+
