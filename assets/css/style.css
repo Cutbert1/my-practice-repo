@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     /* Basic project style */
     color: #3a3a3a;
-    font-family: "lato", sans-serif;  
+    font-family: "lato", sans-serif;
 }
 
 /* Header */
@@ -28,17 +28,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    
 }
 
 header a {
     text-decoration: none;
     color: inherit;
 }
-h1 {
+
+h1,
+h2,
+h3 {
     font-family: "oswald", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525; 
+    letter-spacing: 1px;
+    color: #252525;
 }
 
 #menu {
@@ -46,9 +50,10 @@ h1 {
     letter-spacing: 4px;
     list-style-type: none;
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1rem;
-    
+
 }
 
 .active {
@@ -86,11 +91,58 @@ main {
     margin-top: 47px;
 }
 
+/* Our-Mission section */
+#our-mission {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#our-mission h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#activities-volunteer>div,
+#activities-community>div,
+#activities-culture>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#activities p {
+    margin: 0 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /* Attire section */
 #attire {
-    height: 700px;
+    height: 600px;
     width: 100%;
     background: url(../images/attire.png) no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* last rgba value set opacity for semi-transparen */
+    background-color: rgba(241, 109, 107, .9);
+    font-size: 90%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    border-radius: 20%;
+}
+
+#cover-text>h1,
+#cover-text>h2 {
+    color: white;
 }
 
 /* Footer */
@@ -110,6 +162,7 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header media query */
     nav {
         display: block;
@@ -117,14 +170,14 @@ main {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-        text-decoration: underline;      
-    } 
+        text-decoration: underline;
+    }
 
     #menu {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
         font-size: 0.7rem;
     }
@@ -138,20 +191,28 @@ main {
         line-height: 75px;
         margin: 0 0 5rem;
     }
+
     /* Main Content */
     #main {
         /* Push down to accomodate a larger header */
         margin-top: 79px;
     }
-} 
+
+    /* Attire */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+    /* Attire */
+    #attire {
+        height: 850px;
+    }
+}
 
 /* Media query: Large devices (laptop and desktops, 992px and up) */
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
-}
-
-
     
-
-
+}
 
