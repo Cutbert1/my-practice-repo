@@ -81,10 +81,16 @@ nav {
 
 /* Main Content */
 main {
-    background-color: lightblue;
     /* Main element using extra space to push down footer */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* Attire section */
+#attire {
+    height: 700px;
+    width: 100%;
+    background: url(../images/attire.png) no-repeat center center/cover;
 }
 
 /* Footer */
