@@ -14,8 +14,7 @@ body {
     flex-direction: column;
     /* Basic project style */
     color: #3a3a3a;
-    font-family: "lato", sans-serif;
-    
+    font-family: "lato", sans-serif;  
 }
 
 /* Header */
@@ -49,7 +48,7 @@ h1 {
 }
 #menu > li {
     margin-bottom: 1rem;
-    font-size: 0.7rem;
+    
 }
 
 .active {
@@ -89,8 +88,18 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: blueviolet;
+#social-networks {
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -102,10 +111,8 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-        text-decoration: underline;
-        
-          
-    }
+        text-decoration: underline;      
+    } 
 
     #menu {
         display: flex;
@@ -113,6 +120,7 @@ footer {
 
     #menu > li {
         padding-left: 1rem;
+        font-size: 0.7rem;
     }
 
     .nav-toggle-label {
@@ -129,13 +137,12 @@ footer {
         /* Push down to accomodate a larger header */
         margin-top: 79px;
     }
-}
+} 
 
 /* Media query: Large devices (laptop and desktops, 992px and up) */
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
-
 
 
     
