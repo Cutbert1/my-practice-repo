@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    
+
 }
 
 header a {
@@ -117,6 +117,24 @@ main {
 hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+#circle-cover-bg {
+    background: url(../images/our-mission-image.png) no-repeat top center/cover;
+    height: 100vw;
+    width: 100vw;
+    margin: 30px;
+    padding-right: 20px;
+    /* Make the square radius into a circle */
+    border-radius: 150px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#activities-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Attire section */
@@ -208,11 +226,67 @@ hr {
     #attire {
         height: 850px;
     }
+
+    /* Reason section */
+    #activities-volunteer,
+    #activities-community {
+        display: flex;
+        flex-direction: column;
+        width: 100;
+    }
+    #activities-volunteer > div,
+    #activities-community > div {
+        width: 75%;
+    }
+    #activities-community {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* Media query: Large devices (laptop and desktops, 992px and up) */
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
-    
+
 }
 
+/* Media query: desktops and larger (1200px and up) */
+@media screen and (min-width: 1200px) {
+    #activities {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #activities > div {
+        flex: 1;
+    }
+    #activities-image {
+        order:0
+    }
+
+    #activities-community {
+        order: 1;
+    }
+
+    #activities-community > div {
+        align-self: flex-start;
+    }
+
+    #activities-voluteer > div {
+        align-self: flex-end;
+    }
+
+    #circle-cover-bg {
+        height: 200vw;
+        width: 200vw;
+        margin: 30px;
+        padding-right: 20px;
+        /* Make the square radius into a circle */
+        border-radius: 150px;
+        max-width: 400px;
+        max-height: 400px;
+
+ 
+
+
+}
