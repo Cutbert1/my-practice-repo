@@ -25,7 +25,7 @@
     <!-- Header -->
     <header>
         <a href="index.html">
-            <h1 id="logo">Igbo Progressive Union</h1>
+            <h1 id="logo">Corby Progressive Union UK (CPU)</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars-staggered"></i></label>
@@ -40,21 +40,57 @@
         </nav>
     </header>
     <!-- Main Content -->
-    <main>Main Content</main>
+    <main>
+        <section id="register">
+            <form id="reguster-form" method="POST" action="https://formdump.codeinstitute.net"></form>
+            <h2><i class="fa-regular fa-registered"></i>Register with us!</h2>
+            <lable for="first_name">First Name</lable>
+            <input type="text" name="first_name" id="first-name" class="text-input" required>
+            <br>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last_name" id="last-name" class="text-input" required>
+            <br>
+            <label for="email_address">Email Address</label>
+            <input type="email" name="email_address" id="email-address" class="text-input" required>
+            <div class="radio-buttons">
+                <div>
+                    <label for="hicking">Hicking</label>
+                    <input type="radio" name="event_preference" id="hicking" value="hicking" required checked>
+                </div>
+                <div>
+                    <label for="camping">Camping</label>
+                    <input type="radio" name="event_preference" id="camping" value="camping" required>
+                </div>
+                <div>
+                    <label for="sports">Sports</label>
+                    <input type="radio" name="event_preference" id="sports" value="sports" required>
+                </div>
+                <div>
+                    <label for="all">All</label>
+                    <input type="radio" name="event_preference" id="all" value="all" required>
+                </div>
+            </div>
+            <button type="submit" class="join-button">Let's Make Corby Great</button>
+
+        </section>
+    </main>
     <!-- Footer -->
     <footer>
         <ul id="social-networks">
             <li><a href="https://en-gb.facebook.com/" target="_blank" rel="noopner"
-                    aria-label="Visit our facebook page (open in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+                    aria-label="Visit our facebook page (open in a new tab)"><i
+                        class="fa-brands fa-square-facebook"></i></a>
             </li>
             <li><a href="https://x.com/?lang=en-gb" target="_blank" rel="noopner"
                     aria-label="Visit our X page (open in a new tab)"><i class="fa-brands fa-x-twitter"></i></a>
             </li>
             <li><a href="https://www.instagram.com/" target="_blank" rel="noopner"
-                    aria-label="Visit our instagram page (open in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
+                    aria-label="Visit our instagram page (open in a new tab)"><i
+                        class="fa-brands fa-square-instagram"></i></a>
             </li>
             <li><a href="https://www.youtube.com/" target="_blank" rel="noopner"
-                    aria-label="Visit our youtube page (open in a new tab)"><i class="fa-brands fa-square-youtube"></i></a>
+                    aria-label="Visit our youtube page (open in a new tab)"><i
+                        class="fa-brands fa-square-youtube"></i></a>
             </li>
         </ul>
     </footer>

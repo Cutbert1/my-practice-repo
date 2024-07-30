@@ -289,7 +289,7 @@ hr {
 #times div {
     color: #ffffff;
     background-color: rgba(0, 0, 0, .6);
-    padding: 15px;
+    padding: 0px;
     text-align: center;
     /* This will not wrap on screens of les than 400px wide.
     Each div sill expand to fill the available space on ots row */
