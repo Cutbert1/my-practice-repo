@@ -124,7 +124,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url(../images/our-mission-image.png) no-repeat top center/cover;
+    background: url(../images/our-mission-image.jpg) no-repeat top center/cover;
     height: 100vw;
     width: 100vw;
     margin: 30px;
@@ -141,17 +141,17 @@ hr {
     justify-content: center;
 }
 
-/* Attire section */
-#attire {
+/* cpu section */
+#cpu {
     height: 600px;
     width: 100%;
-    background: url(../images/attire.png) no-repeat center center/cover;
+    background: url(../images/cpu.jpg) no-repeat center center/cover;
     position: relative;
 }
 
 #cover-text {
     /* last rgba value set opacity for semi-transparen */
-    background-color: rgba(241, 109, 107, .9);
+    background-color: rgba(210, 100, 100, .9);
     font-size: 90%;
     position: absolute;
     bottom: 30px;
@@ -220,14 +220,14 @@ hr {
         margin-top: 79px;
     }
 
-    /* Attire */
+    /* cpu */
     #cover-text {
         width: 300px;
         right: 50px;
     }
 
-    /* Attire */
-    #attire {
+    /* cpu */
+    #cpu {
         height: 850px;
     }
 
