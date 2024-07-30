@@ -45,6 +45,10 @@ h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 #menu {
     font-size: 100%;
     letter-spacing: 4px;
@@ -244,6 +248,31 @@ hr {
     }
 }
 
+/* Meet up Times Section */
+#times {
+    background: url(../images/city.jpg) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of les than 400px wide.
+    Each div sill expand to fill the available space on ots row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Create a grid of meet up divs over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /* Override the settings coloue set in general style */
+    color: #ffffff;
+}
+
 /* Media query: Large devices (laptop and desktops, 992px and up) */
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -285,8 +314,6 @@ hr {
         border-radius: 150px;
         max-width: 400px;
         max-height: 400px;
-
- 
-
-
+    }
+        
 }
